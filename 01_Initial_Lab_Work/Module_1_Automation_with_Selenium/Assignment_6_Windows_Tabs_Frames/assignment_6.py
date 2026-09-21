@@ -20,6 +20,7 @@ try:
     main_window = driver.current_window_handle
 
     print("Main window handle stored.")
+
     iframe = wait.until(
         EC.presence_of_element_located(
             (By.NAME, "myframe")
@@ -29,13 +30,18 @@ try:
     driver.switch_to.frame(iframe)
 
     print("Switched to iframe successfully.")
-    iframe_text = driver.find_element(
+
+    iframe_body = driver.find_element(
         By.TAG_NAME,
         "body"
-    ).text
+    )
 
     print("Text inside iframe:")
-    print(iframe_text)
+    print(iframe_body.text)
+
+    iframe_body.click()
+
+    print("Interacted with the element inside the iframe successfully.")
 
     driver.switch_to.default_content()
 
@@ -60,11 +66,8 @@ try:
     )
 
     for window in driver.window_handles:
-
         if window != main_window:
-
             driver.switch_to.window(window)
-
             break
 
     print("Switched to new window successfully.")
@@ -73,11 +76,9 @@ try:
 
     print("New window title:", new_window_title)
 
-
     driver.close()
 
     print("New window closed successfully.")
-
 
     driver.switch_to.window(main_window)
 
