@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.3 on win32)" generated="2026-09-23T17:06:52.977103" rpa="false" schemaversion="5">
+<suite id="s1" name="Data Driven Login" source="C:\Users\shrey\OneDrive\Documents\Project\Selenium-Python-Automation-Shreya-Ghosh\01_Initial_Lab_Work\Module_4_Robot_Framework\Variables_and_Data_Driven_Automation\data_driven_login.robot">
+<test id="s1-t1" name="Login with standard user" line="12">
+<kw name="Login With Different Users">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:53.356525" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:06:53.355823" elapsed="1.288021"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:06:54.644392" elapsed="0.068431"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:54.714185" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:06:54.713262" elapsed="0.160169"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:54.874359" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:06:54.873811" elapsed="0.114024"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:54.988560" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:06:54.988109" elapsed="0.093155"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:55.139817" level="INFO">Current page contains element 'class=title'.</msg>
+<arg>class=title</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:06:55.081660" elapsed="0.058341"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:06:57.141966" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:06:55.140303" elapsed="2.001986"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2026-09-23T17:06:53.353939" elapsed="3.788675"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T17:06:57.143855" elapsed="2.255087"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:06:53.352146" elapsed="6.047483"/>
+</test>
+<test id="s1-t2" name="Login with problem user" line="12">
+<kw name="Login With Different Users">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:06:59.405750" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T17:06:59.405073" elapsed="1.183089"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T17:07:00.588478" elapsed="0.056746"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:07:00.646586" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:07:00.645640" elapsed="0.152071"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:07:00.799015" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:07:00.798244" elapsed="0.102805"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:07:00.902715" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T17:07:00.901736" elapsed="0.093342"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T17:07:01.060714" level="INFO">Current page contains element 'class=title'.</msg>
+<arg>class=title</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T17:07:00.995417" elapsed="0.065487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T17:07:03.063156" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T17:07:01.061602" elapsed="2.001877"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2026-09-23T17:06:59.403257" elapsed="3.660536"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T17:07:03.065008" elapsed="2.201618"/>
+</kw>
+<status status="PASS" start="2026-09-23T17:06:59.400921" elapsed="5.866378"/>
+</test>
+<status status="PASS" start="2026-09-23T17:06:52.978826" elapsed="12.290209"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Data Driven Login" id="s1" pass="2" fail="0" skip="0">Data Driven Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

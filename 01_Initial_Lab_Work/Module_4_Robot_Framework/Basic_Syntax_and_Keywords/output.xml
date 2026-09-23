@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.3 on win32)" generated="2026-09-23T16:55:50.175461" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Keywords" source="C:\Users\shrey\OneDrive\Documents\Project\Selenium-Python-Automation-Shreya-Ghosh\01_Initial_Lab_Work\Module_4_Robot_Framework\Basic_Syntax_and_Keywords\basic_keywords.robot">
+<test id="s1-t1" name="Open Browser And Navigate To Website" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:55:50.909711" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:55:50.908760" elapsed="7.185409"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T16:55:58.095092" elapsed="0.043874"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T16:56:00.143090" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T16:55:58.140083" elapsed="2.003521"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T16:56:00.145364" elapsed="2.237457"/>
+</kw>
+<status status="PASS" start="2026-09-23T16:55:50.906508" elapsed="11.476876"/>
+</test>
+<test id="s1-t2" name="Fill Login Form" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:56:02.387388" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:56:02.386691" elapsed="1.191632"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T16:56:03.578995" elapsed="0.060263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:56:03.641409" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:56:03.640371" elapsed="0.145285"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:56:03.787070" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:56:03.786135" elapsed="0.103316"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T16:56:05.891574" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T16:56:03.890263" elapsed="2.001541"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T16:56:05.892433" elapsed="2.163018"/>
+</kw>
+<status status="PASS" start="2026-09-23T16:56:02.384864" elapsed="5.670886"/>
+</test>
+<test id="s1-t3" name="Verify Element On Webpage" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:56:08.057287" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:56:08.057091" elapsed="1.178889"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T16:56:09.236958" elapsed="0.044027"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:56:09.297270" level="INFO">Current page contains element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T16:56:09.282200" elapsed="0.015309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T16:56:11.299870" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T16:56:09.298408" elapsed="2.001952"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T16:56:11.302319" elapsed="2.294961"/>
+</kw>
+<status status="PASS" start="2026-09-23T16:56:08.056543" elapsed="5.541261"/>
+</test>
+<status status="PASS" start="2026-09-23T16:55:50.177660" elapsed="23.421640"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Basic Keywords" id="s1" pass="3" fail="0" skip="0">Basic Keywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

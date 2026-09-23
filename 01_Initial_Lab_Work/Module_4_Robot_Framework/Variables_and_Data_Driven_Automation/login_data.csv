@@ -1,0 +1,3 @@
+*** Test Cases ***;${username};${password}
+Login with standard user;standard_user;secret_sauce
+Login with problem user;problem_user;secret_sauce
