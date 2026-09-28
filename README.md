@@ -23,7 +23,6 @@ The project demonstrates the implementation of different concepts covered throug
 | **Enrollment No.** | 12023052018010 |
 | **Programming Language** | Python |
 | **Automation Tool** | Selenium WebDriver |
-| **Testing Framework** | PyTest |
 | **Academic Year** | 2026 |
 
 ---
