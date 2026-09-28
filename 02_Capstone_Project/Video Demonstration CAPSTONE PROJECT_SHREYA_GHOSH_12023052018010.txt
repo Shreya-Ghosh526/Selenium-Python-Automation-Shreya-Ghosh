@@ -1,0 +1,14 @@
+Video Demonstration 
+
+The complete video demonstration of the Selenium Automation 
+Capstone Project is available at the link below: 
+
+Google Drive Video Link: 
+
+Selenium Automation Capstone Project (SHREYA GHOSH_CSBS) :
+https://drive.google.com/file/d/1DvmOwgzMKuXx3iaDD1eaPF46kweWw1us/view?usp=drive_link
+
+
+The video demonstrates the complete automation workflow, including 
+login, product search, quantity selection, adding the product to the 
+cart, cart verification, screenshot capture, and test report generation.
